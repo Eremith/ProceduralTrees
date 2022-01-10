@@ -5,7 +5,7 @@ class Branch{
         this.dir = dir
 
         this.next = function(){
-            let nextBranch = new Branch(this, {x: this.pos, y: this.dir}, this.dir)
+            let nextBranch = new Branch(this, this.pos, this.dir)
             return nextBranch
         }
 
